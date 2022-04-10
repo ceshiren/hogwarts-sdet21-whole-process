@@ -30,7 +30,7 @@ class FeishuApi:
         else:
             # 如果传递过来的请求没有header
             kwargs["headers"] = {"Authorization": f"Bearer {self.get_token()}"}
-        # 传递塞入headers 的请求信息
+        # 传递塞入headers 的请求信息， 在发起请求的时候将基地址和传入的url的path进行拼接
         r = HttpProtocol.request(method, self.base_url+url, **kwargs)
         return r
 
