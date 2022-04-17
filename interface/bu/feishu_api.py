@@ -3,7 +3,7 @@ __author__ = '霍格沃兹测试开发学社'
 __desc__ = '更多测试开发技术探讨，请访问：https://ceshiren.com/t/topic/15860'
 """
 # 飞书api，代表一些和具体业务产品使用的全局的接口信息，比如token
-from protocol.http_protocol import HttpProtocol
+from interface.protocol.http_protocol import HttpProtocol
 from utils.file_tools import FileTool
 
 
